@@ -3,59 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Gautam | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navbar -->
-    <header>
-        <nav>
-            <h2 class="logo">Gautam</h2>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header class="navbar">
+    <h2 class="logo">Gautam</h2>
+    <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Hello, I'm <span>Gautam Kumar</span></h1>
-            <p>A passionate Web Developer</p>
-            <button>Hire Me</button>
+<section class="hero">
+    <h1>Hello, I'm <span>Gautam Kumar</span></h1>
+    <h2>I am a <span id="typing"></span></h2>
+    <button onclick="scrollToProjects()">View Projects</button>
+</section>
+
+<section class="skills">
+    <h2>My Skills</h2>
+    <div class="skill-container">
+        <div class="skill">C / C++</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Git & GitHub</div>
+        <div class="skill">Backend (Learning)</div>
+        <div class="skill">AI / ML (Learning)</div>
+    </div>
+</section>
+
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Weather App</h3>
+            <p>Uses API + GPS to show weather</p>
         </div>
-    </section>
 
-    <!-- Projects -->
-    <section class="projects">
-        <h2>My Projects</h2>
-        <div class="cards">
-
-            <div class="card">
-                <h3>Weather App</h3>
-                <p>Shows weather using GPS location.</p>
-            </div>
-
-            <div class="card">
-                <h3>Chat App</h3>
-                <p>Real-time messaging using Socket.io.</p>
-            </div>
-
-            <div class="card">
-                <h3>Portfolio</h3>
-                <p>Personal website to showcase skills.</p>
-            </div>
-
+        <div class="card">
+            <h3>Chat App</h3>
+            <p>Real-time messaging using Socket.io</p>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Gautam | All Rights Reserved</p>
-    </footer>
+        <div class="card">
+            <h3>Smart Agriculture</h3>
+            <p>IoT project using ESP8266 sensors</p>
+        </div>
+    </div>
+</section>
 
+<footer>
+    <p>© 2026 Gautam Kumar</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
